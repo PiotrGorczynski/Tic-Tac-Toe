@@ -1,0 +1,79 @@
+.cell {
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    background-color: #f7f7f7;
+    color: #444;
+    line-height: 75px;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    }
+    
+    .cell:hover {
+    background-color: #ddd;
+    }
+    
+    .cell:focus {
+    outline: none;
+    background-color: #ddd;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    
+    #gameContainer{
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    margin-top: 50px;
+    }
+    
+    #cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    width: 275px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    background-color: #fff;
+    overflow: hidden;
+    }
+    
+    #statusText{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #444;
+    }
+    
+    #restartBtn, #playFriend, #playAgainstComp{
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+    }
+    
+    #restartBtn:hover, #playFriend:hover, #playAgainstComp:hover{
+    background-color: #27ae60;
+    }
+    
+    @media only screen and (max-width: 480px) {
+    .cell {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    }
+    #cellContainer {
+    width: 170px;
+    }
+    }
